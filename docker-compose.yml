@@ -20,7 +20,4 @@ services:
       - MYSQL_ROOT_PASSWORD=1234
 
 networks: 
-    default: 
-      name: bridge
-      external: true
-      network_mode: 'bridge'
+    network_mode: 'bridge'
