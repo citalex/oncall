@@ -12,12 +12,18 @@ services:
       - IRIS_API_HOST=iris
     volumes:
       - ./configs/config.docker.yaml:/home/oncall/config/config.yaml
+    networks:
+      - ingress
 
   oncall-mysql:
     hostname: oncall-mysql
     image: mysql:5.7
     environment:
       - MYSQL_ROOT_PASSWORD=1234
+    networks:
+      - ingress
 
-networks: 
-    network_mode: 'bridge'
+networks:
+  ingress:
+    name: bridge
+    external: true
