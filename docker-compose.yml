@@ -13,7 +13,7 @@ services:
     volumes:
       - ./configs/config.docker.yaml:/home/oncall/config/config.yaml
     networks:
-      - bridge
+      - default
 
   oncall-mysql:
     hostname: oncall-mysql
@@ -21,8 +21,9 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=1234
     networks:
-      - bridge
+      - default
 
-networks:
-  bridge:
-    external: true
+networks: 
+    default: 
+          name: bridge
+          external: true
