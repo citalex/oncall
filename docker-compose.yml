@@ -3,6 +3,7 @@ version: '3'
 services:
   oncall-web:
     build: .
+    pull_policy: build
     hostname: oncall
     ports:
       - "8080:8080"
