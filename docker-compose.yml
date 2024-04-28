@@ -13,7 +13,7 @@ services:
     volumes:
       - ./configs/config.docker.yaml:/home/oncall/config/config.yaml
     networks:
-      - ingress
+      - default
 
   oncall-mysql:
     hostname: oncall-mysql
@@ -21,9 +21,4 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=1234
     networks:
-      - ingress
-
-networks:
-  ingress:
-    name: docker0
-    external: true
+      - default
