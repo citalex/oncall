@@ -94,7 +94,7 @@ notifications:
 reminder:
   activated: True
   polling_interval: 360  # In seconds, the reminder will poll DB for events every $n seconds
-  default_timezone: 'US/Pacific'  # Dates/times in the reminders are formatted in this timezone
+  default_timezone: 'Australia/Brisbane'  # Dates/times in the reminders are formatted in this timezone
 
 # User validator checks that people scheduled for on-call events have defined phone numbers
 user_validator:
@@ -135,6 +135,7 @@ supported_timezones:
   - 'Asia/Kolkata'
   - 'Asia/Shanghai'
   - 'UTC'
+  - 'Australia/Brisbane'
 
 index_content_setting:
   # Page footer contents
