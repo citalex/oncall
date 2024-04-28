@@ -11,7 +11,7 @@ services:
       - DOCKER_DB_BOOTSTRAP=1
       - IRIS_API_HOST=iris
     volumes:
-      - ./configs/config.docker.yaml:./configs/config.yaml
+      - ./configs/config.docker.yaml:config.yaml
     networks:
       - default
 
