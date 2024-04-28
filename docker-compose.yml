@@ -28,3 +28,4 @@ networks:
     # Use a custom driver
     name: bridge
     driver: bridge
+    external: true
