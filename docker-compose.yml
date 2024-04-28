@@ -13,7 +13,7 @@ services:
     volumes:
       - ./configs/config.docker.yaml:/home/oncall/config/config.yaml
     networks:
-      - iris
+      - bridge
   
   oncall-mysql:
     hostname: oncall-mysql
@@ -21,8 +21,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=1234
     networks:
-      - iris
+      - bridge
 
 networks:
-  iris:
-    name: iris
+  bridge:
+    name: bridge
