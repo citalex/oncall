@@ -25,5 +25,5 @@ services:
 
 networks:
   ingress:
-    name: bridge
+    name: docker0
     external: true
