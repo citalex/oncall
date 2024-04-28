@@ -25,7 +25,4 @@ services:
 
 networks:
   bridge:
-    # Use a custom driver
-    name: bridge
-    driver: bridge
     external: true
