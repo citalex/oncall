@@ -21,5 +21,5 @@ services:
 
 networks: 
     default: 
-          name: bridge
-          external: true
+      name: bridge
+      external: true
