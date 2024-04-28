@@ -45,6 +45,7 @@ supported_timezones:
   - 'Asia/Kolkata'
   - 'Asia/Shanghai'
   - 'UTC'
+  - 'Australia/Brisbane'
 
 index_content_setting:
   #footer: |
@@ -70,7 +71,7 @@ notifications:
 reminder:
   activated: True
   polling_interval: 360
-  default_timezone: 'US/Pacific'
+  default_timezone: 'Australia/Brisbane'
 
 user_validator:
   activated: True
