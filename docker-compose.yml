@@ -22,3 +22,8 @@ services:
       - MYSQL_ROOT_PASSWORD=1234
     networks:
       - bridge
+
+networks:
+  bridge:
+    # Use a custom driver
+    driver: bridge
