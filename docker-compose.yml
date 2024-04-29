@@ -5,14 +5,12 @@ services:
     build: .
     pull_policy: build
     hostname: oncall
-    depends_on:
-      - oncall-mysql
     ports:
       - "8080:8080"
     environment:
       - DOCKER_DB_BOOTSTRAP=1
     volumes:
-      - ./configs/config.docker.yaml:/configs/config.yaml
+      - ./configs/config.docker.yaml:/home/oncall/config/config.yaml
       - oncall:/_data
     networks:
       - default
