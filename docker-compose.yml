@@ -1,4 +1,4 @@
-lversion: '3'
+version: '3'
 
 services:
   oncall-web:
