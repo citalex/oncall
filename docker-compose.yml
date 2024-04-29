@@ -12,7 +12,7 @@ services:
       - IRIS_API_HOST=iris
     volumes:
       - ./configs/config.docker.yaml:/configs/config.yaml
-      - oncall:/data
+      - oncall:/_data
     networks:
       - default
 
