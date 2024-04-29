@@ -5,6 +5,8 @@ services:
     build: .
     pull_policy: build
     hostname: oncall
+    links:
+      - oncall-mysql
     ports:
       - "8080:8080"
     environment:
