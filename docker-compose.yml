@@ -13,7 +13,7 @@ services:
       - ./configs/config.docker.yaml:/oncall/_data/home/oncall/config/config.yaml
       - oncall:/_data
     networks:
-      - default
+      - shared_mysql
 
   oncall-mysql:
     hostname: oncall-mysql
@@ -21,8 +21,13 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=1234
     networks:
-      - default
+      - shared_mysql
       
 volumes:
   oncall:
     external: true
+
+networks:
+  default:
+    external: true
+    name: shared_mysql
