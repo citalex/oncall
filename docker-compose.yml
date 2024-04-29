@@ -11,7 +11,6 @@ services:
       - "8080:8080"
     environment:
       - DOCKER_DB_BOOTSTRAP=1
-      - IRIS_API_HOST=default
     volumes:
       - ./configs/config.docker.yaml:/configs/config.yaml
       - oncall:/_data
