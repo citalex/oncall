@@ -11,7 +11,8 @@ services:
       - DOCKER_DB_BOOTSTRAP=1
       - IRIS_API_HOST=iris
     volumes:
-      - ./configs/config.docker.yaml:./data/compose/oncall/configs/config.yaml
+      - ./configs/config.docker.yaml:/configs/config.yaml
+      - oncall:/data
     networks:
       - default
 
@@ -22,3 +23,6 @@ services:
       - MYSQL_ROOT_PASSWORD=1234
     networks:
       - default
+volumes:
+  oncall:
+    external: true
