@@ -10,7 +10,7 @@ services:
     environment:
       - DOCKER_DB_BOOTSTRAP=1
     volumes:
-      - ./configs/config.docker.yaml:/home/oncall/config/config.yaml
+      - ./configs/config.docker.yaml:/oncall/_data/home/oncall/config/config.yaml
       - oncall:/_data
     networks:
       - default
