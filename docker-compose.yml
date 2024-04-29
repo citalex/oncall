@@ -1,4 +1,4 @@
-version: '3'
+lversion: '3'
 
 services:
   oncall-web:
@@ -14,7 +14,7 @@ services:
       - ./configs/config.docker.yaml:/configs/config.yaml
       - oncall:/_data
     networks:
-      - oncall_default
+      - default
 
   oncall-mysql:
     hostname: oncall-mysql
@@ -22,7 +22,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=1234
     networks:
-      - oncall_default
+      - default
+      
 volumes:
   oncall:
     external: true
