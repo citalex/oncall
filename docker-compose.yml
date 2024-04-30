@@ -18,13 +18,8 @@ services:
   oncall-mysql:
     hostname: oncall-mysql
     image: mysql:5.7
-    ports:
-      - 3306
     environment:
-      - MYSQL_ROOT_PASSWORD=1234
-      - MYSQL_PORT_INTERNAL=3306
-      - MYSQL_HOST=oncall-mysql
-      - MYSQL_DATABASE=oncall
+      - MYSQL_ROOT_PASSWORD=)tLFH45^R6^7_09f)k&adsJhY
     networks:
       - default
       
