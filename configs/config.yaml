@@ -11,7 +11,7 @@ db:
     kwargs:
       scheme: mysql+pymysql
       user: root
-      password: "1234"
+      password: ")tLFH45^R6^7_09f)k&adsJhY"
       host: oncall-mysql
       port: 3306
       database: oncall
