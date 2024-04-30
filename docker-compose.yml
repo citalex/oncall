@@ -22,6 +22,9 @@ services:
       - 3306
     environment:
       - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_PORT_INTERNAL=3306
+      - MYSQL_HOST=oncall-mysql
+      - MYSQL_DATABASE=oncall
     networks:
       - default
       
