@@ -28,7 +28,3 @@ services:
 volumes:
   oncall:
     external: true
-
-networks:
-  default:
-    external: true
